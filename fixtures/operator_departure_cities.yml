@@ -1,0 +1,9 @@
+"Teztour Москва":
+  departure_city: "Москва"
+  operator_code: Teztour
+  departure_city_code: 345
+
+"Teztour Казань":
+  departure_city: "Казань"
+  operator_code: Teztour
+  departure_city_code: 1107

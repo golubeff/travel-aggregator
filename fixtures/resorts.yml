@@ -1,0 +1,11 @@
+<%
+[ "Дахаб", 
+  "Хургада"
+].each do |resort|
+%>
+"<%= resort %>":
+  title: "<%= resort %>"
+  country: "Египет"
+<%
+end
+%>
