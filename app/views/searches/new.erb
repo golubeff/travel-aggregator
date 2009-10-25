@@ -9,9 +9,19 @@
       </tr><tr>
         <td>Вылет из</td>
         <td><%= f.select 'departure_city_id', DepartureCity.find(:all,:order => :title).map { |it| [ it.title, it.id ] }, { :include_blank => true } %></td>
-      </tr><tr>
+      </tr>
+      <tr>
         <td>Категория отеля</td>
         <td><%= f.select 'hotel_category_id', HotelCategory.find(:all,:order => :title).map { |it| [ it.title, it.id ] }, { :include_blank => true } %></td>
+      </tr>
+      <tr>
+        <td>Пансион</td>
+        <td><%= f.select 'meal_id', Meal.find(:all,:order => :title).map { |it| [ it.title, it.id ] }, { :include_blank => true } %></td>
+      </tr>
+      <tr>
+        <td>Размещение</td>
+        <td><%= f.select 'accomodation_id', Accomodation.find(:all,:order => :title).map { |it| [ it.title, it.id ] }, { :include_blank => true } %></td>
+      </tr>
       <tr>
         <td>Дата:</td>
         <td><%= f.text_field 'date_from', :size => 7 %> - <%= f.text_field 'date_till', :size => 7 %></td>

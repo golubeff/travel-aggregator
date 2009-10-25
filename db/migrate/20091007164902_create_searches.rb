@@ -52,7 +52,7 @@ class CreateSearches < ActiveRecord::Migration
       t.date :date_till
       t.integer :nights
       t.integer :hotel_category_id
-      t.integer :meals_id
+      t.integer :meal_id
       t.integer :accomodation_id
       t.float :price_from
       t.float :price_to

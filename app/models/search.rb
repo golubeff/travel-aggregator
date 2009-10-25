@@ -7,6 +7,8 @@ class Search < ActiveRecord::Base
   belongs_to :departure_city
   belongs_to :resort
   belongs_to :hotel_category
+  belongs_to :meal
+  belongs_to :accomodation
 
   def after_initialize
     self.date_from = Time.now.to_date.to_s(:db)

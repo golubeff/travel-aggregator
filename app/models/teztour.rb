@@ -15,7 +15,12 @@ class Teztour
       url << "&cityId=#{search.departure_city.to_operator(OPERATOR_CODE)}"
       url << "&dateFromF=#{date_from}"
       url << "&dateToF=#{date_till}"
+      url << "nightsFrom=7&nightsTo=15&priceFrom=0.0&priceTo=15000"
       url << "&hotelTypeId=#{search.hotel_category.to_operator(OPERATOR_CODE)}"
+      url << "&hotelTypeBetter=on&hotelTypeBetter=off"
+      url << "&pansionId=#{search.meal.to_operator(OPERATOR_CODE)}&pansionBetter=on&pansionBetter=off"
+      url << "&hotelStayTypeId=#{search.accomodation.to_operator(OPERATOR_CODE)}&childAge1=4&childAge2=9"
+      url << "&tsChoosedCountryId=#{search.country.to_operator(OPERATOR_CODE)}&tsChoosedRegionId=0"
       url << "&sortColumn=price%3Basc"
       # заглушка для локальной версии, парсим локальный файл
       # url = "http://book.teztour.com/book/actions/tourSearch.sdo?template=print&page=s%2Fpodbor&tsId=Xert
