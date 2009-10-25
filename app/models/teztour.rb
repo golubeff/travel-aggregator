@@ -4,14 +4,17 @@ class Teztour
 
   class << self
     def search(search)
-      #date_from_array=search.date_from.split("-")
-      #date_from = date_from_array[0]
+      date_from_array=search.date_from.to_date.to_s(:db).split("-")
+      date_from = date_from_array[2] << '.' << date_from_array[1] << '.' << date_from_array[0]
+
+      date_till_array=search.date_till.to_date.to_s(:db).split("-")
+      date_till = date_till_array[2] << '.' << date_till_array[1] << '.' << date_till_array[0]
 
       url = 'http://book.teztour.com/book/actions/tourSearch.sdo?template=print&page=s%2Fpodbor&tsId=Xert'
       url << "&countryId=#{search.country.to_operator(OPERATOR_CODE)}&spoRegionSetId=&regionIdsSI="
       url << "&cityId=#{search.departure_city.to_operator(OPERATOR_CODE)}"
-      url << "&dateFromF=#{search.date_from}"
-      url << "&dateToF=#{search.date_till}"
+      url << "&dateFromF=#{date_from}"
+      url << "&dateToF=#{date_till}"
       url << "&hotelTypeId=#{search.hotel_category.to_operator(OPERATOR_CODE)}"
       url << "&sortColumn=price%3Basc"
       # заглушка для локальной версии, парсим локальный файл
@@ -22,8 +25,9 @@ class Teztour
 #&hotelTypeBetter=on&hotelTypeBetter=off&pansionId=2424&pansionBetter=on&pansionBetter=off
 #&hotelStayTypeId=2&childAge1=4&childAge2=9&tsChoosedCountryId=1104&
 #tsChoosedRegionId=0&sortColumn=price%3Basc"
-      url = 'http://localhost:3000/tez.html';
-
+      #url = 'http://localhost:3000/tez.html';
+      puts 'url == :: '
+      puts url
       doc = open(url) { |f| Hpricot(f) }
       #puts doc
       (doc.search("//tr[@class='tsr0']") | doc.search("//tr[@class='tsr1']")).map do |tour|
