@@ -1,4 +1,15 @@
-<% [ "DBL", "SGL" ].each do |category| %>
+<% [  "DBL",
+      "SGL",
+      "4 PAX",
+      "DBL+EXB",
+      "SGL+CHD",
+      "SGL+2CHD",
+      "DBL+CHD",
+      "DBL+2CHD",
+      "DBL+EXB+ CHD",
+      "TRPL+2CHD",
+      "4PAX+CHD"
+    ].each do |category| %>
 "<%= category %>":
   title: "<%= category %>"
 <% end %>

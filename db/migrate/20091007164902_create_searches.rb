@@ -61,17 +61,17 @@ class CreateSearches < ActiveRecord::Migration
     Fixtures.create_fixtures 'fixtures', [
       'hotel_categories', 'operator_hotel_categories',
       'departure_cities', 'operator_departure_cities',
-      'resorts', 'operator_resorts',
+      'resorts', 
       'countries', 'operator_countries'
     ]
   end
 
   def self.down
     drop_table :searches
-    drop_table :accomodations
-    drop_table :operator_accomodations
-    drop_table :meals
-    drop_table :operator_meals
+    #drop_table :accomodations
+    #drop_table :operator_accomodations
+    #drop_table :meals
+    #drop_table :operator_meals
     drop_table :hotel_categories
     drop_table :operator_hotel_categories
     drop_table :departure_cities

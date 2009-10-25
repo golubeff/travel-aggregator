@@ -9,7 +9,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091007164902) do
+ActiveRecord::Schema.define(:version => 20091024182902) do
+
+  create_table "accomodations", :force => true do |t|
+    t.string "title"
+  end
 
   create_table "countries", :force => true do |t|
     t.string "title"
@@ -21,6 +25,16 @@ ActiveRecord::Schema.define(:version => 20091007164902) do
 
   create_table "hotel_categories", :force => true do |t|
     t.string "title"
+  end
+
+  create_table "meals", :force => true do |t|
+    t.string "title"
+  end
+
+  create_table "operator_accomodations", :force => true do |t|
+    t.integer "accomodation_id"
+    t.string  "operator_code"
+    t.string  "accomodation_code"
   end
 
   create_table "operator_countries", :force => true do |t|
@@ -41,10 +55,17 @@ ActiveRecord::Schema.define(:version => 20091007164902) do
     t.string  "hotel_category_code"
   end
 
+  create_table "operator_meals", :force => true do |t|
+    t.integer "meal_id"
+    t.string  "operator_code"
+    t.string  "meal_code"
+  end
+
   create_table "operator_resorts", :force => true do |t|
     t.integer "resort_id"
     t.string  "operator_code"
     t.string  "resort_code"
+    t.integer "country_id"
   end
 
   create_table "resorts", :force => true do |t|

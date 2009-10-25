@@ -2,16 +2,16 @@
   <table>
     <tr>
       <td>Страна</td>
-      <td><%= f.select "country_id", Country.all.map { |it| [it.title, it.id] }, { :include_blank => true } %></td>
+      <td><%= f.select "country_id", Country.find(:all,:order => :title).map { |it| [it.title, it.id] }, { :include_blank => true }, :onchange => "resort_item", :complete => visual_effect(:highlight, "resort_item") %></td>
       </tr><tr>
         <td>Курорт</td>
-        <td><%= f.select 'resort_id', Resort.all.map { |it| [ it.title, it.id ] }, { :include_blank => true } %></td>
+        <td><div id="resort_item"></div></td>
       </tr><tr>
         <td>Вылет из</td>
-        <td><%= f.select 'departure_city_id', DepartureCity.all.map { |it| [ it.title, it.id ] }, { :include_blank => true } %></td>
+        <td><%= f.select 'departure_city_id', DepartureCity.find(:all,:order => :title).map { |it| [ it.title, it.id ] }, { :include_blank => true } %></td>
       </tr><tr>
         <td>Категория отеля</td>
-        <td><%= f.select 'hotel_category_id', HotelCategory.all.map { |it| [ it.title, it.id ] }, { :include_blank => true } %></td>
+        <td><%= f.select 'hotel_category_id', HotelCategory.find(:all,:order => :title).map { |it| [ it.title, it.id ] }, { :include_blank => true } %></td>
       <tr>
         <td>Дата:</td>
         <td><%= f.text_field 'date_from', :size => 7 %> - <%= f.text_field 'date_till', :size => 7 %></td>

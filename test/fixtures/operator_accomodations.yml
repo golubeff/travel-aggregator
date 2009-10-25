@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  accomodation_id: 1
+  accomodation_code: MyString
+  operator_code: MyString
+
+two:
+  accomodation_id: 1
+  accomodation_code: MyString
+  operator_code: MyString
