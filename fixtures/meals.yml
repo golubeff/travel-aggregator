@@ -1,4 +1,4 @@
-<% [ "RO", "BB", "HB", "FB", "AL", "UAL" ].each do |category| %>
+<% [ "RO", "BB", "HB", "FB", "AI", "UAL" ].each do |category| %>
 "<%= category %>":
   title: "<%= category %>"
 <% end %>

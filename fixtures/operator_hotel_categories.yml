@@ -1,14 +1,75 @@
+"Teztour Ap.Htl":
+  hotel_category: "Ap.Htl"
+  operator_code: Teztour
+  hotel_category_code: 253004
+
+"Teztour Apts":
+  hotel_category: "Apts"
+  operator_code: Teztour
+  hotel_category_code: 253005
+
+"Teztour Pens":
+  hotel_category: "Pens"
+  operator_code: Teztour
+  hotel_category_code: 253006
+
+"Teztour 1*":
+  hotel_category: "1 *"
+  operator_code: Teztour
+  hotel_category_code: 2566
+
+"Teztour 2*":
+  hotel_category: "2 *"
+  operator_code: Teztour
+  hotel_category_code: 2567
+
+"Teztour 2+*":
+  hotel_category: "2+ *"
+  operator_code: Teztour
+  hotel_category_code: 70486
+
+"Teztour HV-3":
+  hotel_category: "HV-3"
+  operator_code: Teztour
+  hotel_category_code: 32844
+
 "Teztour 3*":
   hotel_category: "3 *"
   operator_code: Teztour
   hotel_category_code: 2568
+
+"Teztour 3+*":
+  hotel_category: "3+ *"
+  operator_code: Teztour
+  hotel_category_code: 70487
+
+"Teztour HV-2":
+  hotel_category: "HV-2"
+  operator_code: Teztour
+  hotel_category_code: 12703
 
 "Teztour 4*":
   hotel_category: "4 *"
   operator_code: Teztour
   hotel_category_code: 2569
 
+"Teztour 4+*":
+  hotel_category: "4+ *"
+  operator_code: Teztour
+  hotel_category_code: 70483
+
 "Teztour 5*":
   hotel_category: "5 *"
   operator_code: Teztour
   hotel_category_code: 2570
+
+"Teztour 5*/HV-1":
+  hotel_category: "5*/HV-1"
+  operator_code: Teztour
+  hotel_category_code: 9005916
+
+"Teztour HV-1":
+  hotel_category: "HV-1"
+  operator_code: Teztour
+  hotel_category_code: 2571
+
