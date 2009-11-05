@@ -1,2 +1,0 @@
-
-<%= f.select 'resort_id', Resort.find(:all,:conditions=>"country_id='#{params[:country_id]}'",:order => :title).map { |it| [ it.title, it.id ] }, { :include_blank => true } %>

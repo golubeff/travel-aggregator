@@ -1,0 +1,7 @@
+
+<%#= select(nil, nil, Resort.find_all_by_country_id("#{params[:country_id]}").collect{ |it| [ it.title, it.id ] },nil,{:name=>:resort_id} )%>
+
+<%#= select 'resort_id', @resorts.map { |it| [ it.title, it.id ] }, { :include_blank => false } %>
+<% if @resorts %>
+<%= select(nil, nil, @resorts.map{|it| [ it.title, it.id]},{:name=>:resort_id, :include_blank=>true})%>
+<% end %>
