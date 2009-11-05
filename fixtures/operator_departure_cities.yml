@@ -1,0 +1,190 @@
+"Teztour Москва":
+  departure_city: "Москва"
+  operator_code: Teztour
+  departure_city_code: 345
+
+"Teztour Казань":
+  departure_city: "Казань"
+  operator_code: Teztour
+  departure_city_code: 1107
+
+"Teztour Алматы":
+  departure_city: "Алматы"
+  operator_code: Teztour
+  departure_city_code: 2707
+
+"Teztour Бухарест":
+  departure_city: "Бухарест"
+  operator_code: Teztour
+  departure_city_code: 9001185
+
+"Teztour CLUJ-NAPOCA":
+  departure_city: "CLUJ-NAPOCA"
+  operator_code: Teztour
+  departure_city_code: 75189
+
+"Teztour Днепропетровск":
+  departure_city: "Днепропетровск"
+  operator_code: Teztour
+  departure_city_code: 6529
+
+"Teztour Донецк":
+  departure_city: "Донецк"
+  operator_code: Teztour
+  departure_city_code: 12044
+
+"Teztour Екатеринбург":
+  departure_city: "Екатеринбург"
+  operator_code: Teztour
+  departure_city_code: 2729
+
+"Teztour Гомель":
+  departure_city: "Гомель"
+  operator_code: Teztour
+  departure_city_code: 4387
+
+"Teztour IASI":
+  departure_city: "IASI"
+  operator_code: Teztour
+  departure_city_code: 5100566
+
+"Teztour Харьков":
+  departure_city: "Харьков"
+  operator_code: Teztour
+  departure_city_code: 1421
+
+"Teztour Киев":
+  departure_city: "Киев"
+  operator_code: Teztour
+  departure_city_code: 3667
+
+"Teztour Красноярск":
+  departure_city: "Красноярск"
+  operator_code: Teztour
+  departure_city_code: 1697
+
+"Teztour Львов":
+  departure_city: "Львов"
+  operator_code: Teztour
+  departure_city_code: 17151
+
+"Teztour Минск":
+  departure_city: "Минск"
+  operator_code: Teztour
+  departure_city_code: 786
+
+"Teztour Одесса":
+  departure_city: "Одесса"
+  operator_code: Teztour
+  departure_city_code: 3669
+
+"Teztour Омск":
+  departure_city: "Омск"
+  operator_code: Teztour
+  departure_city_code: 2672
+
+"Teztour RIGA":
+  departure_city: "RIGA"
+  operator_code: Teztour
+  departure_city_code: 523
+
+"Teztour Ростов-на-Дону":
+  departure_city: "Ростов-на-Дону"
+  operator_code: Teztour
+  departure_city_code: 3711
+
+"Teztour Санкт-Петербург":
+  departure_city: "Санкт-Петербург"
+  operator_code: Teztour
+  departure_city_code: 521
+
+"Teztour Самара":
+  departure_city: "Самара"
+  operator_code: Teztour
+  departure_city_code: 412
+
+"Teztour София":
+  departure_city: "София"
+  operator_code: Teztour
+  departure_city_code: 11870
+
+"Teztour Сургут":
+  departure_city: "Сургут"
+  operator_code: Teztour
+  departure_city_code: 2680
+
+"Teztour TALLINN":
+  departure_city: "TALLINN"
+  operator_code: Teztour
+  departure_city_code: 3746
+
+"Teztour Тимишоара":
+  departure_city: "Тимишоара"
+  operator_code: Teztour
+  departure_city_code: 9001187
+
+"Teztour Уфа":
+  departure_city: "Уфа"
+  operator_code: Teztour
+  departure_city_code: 3429
+
+"Teztour Ульяновск":
+  departure_city: "Ульяновск"
+  operator_code: Teztour
+  departure_city_code: 1813
+
+"Teztour VARNA":
+  departure_city: "VARNA"
+  operator_code: Teztour
+  departure_city_code: 4102819
+
+"Teztour VILNIUS":
+  departure_city: "VILNIUS"
+  operator_code: Teztour
+  departure_city_code: 4800
+
+"Teztour Волгоград":
+  departure_city: "Волгоград"
+  operator_code: Teztour
+  departure_city_code: 2552
+
+"Teztour Ереван":
+  departure_city: "Ереван"
+  operator_code: Teztour
+  departure_city_code: 16647
+
+"Teztour Краснодар":
+  departure_city: "Краснодар"
+  operator_code: Teztour
+  departure_city_code: 2141
+
+"Teztour Нижневартовск":
+  departure_city: "Нижневартовск"
+  operator_code: Teztour
+  departure_city_code: 1190
+
+"Teztour Новосибирск":
+  departure_city: "Новосибирск"
+  operator_code: Teztour
+  departure_city_code: 2190
+
+"Teztour Пермь":
+  departure_city: "Пермь"
+  operator_code: Teztour
+  departure_city_code: 1392
+
+"Teztour Сыктывкар":
+  departure_city: "Сыктывкар"
+  operator_code: Teztour
+  departure_city_code: 3066
+
+"Teztour Тюмень":
+  departure_city: "Тюмень"
+  operator_code: Teztour
+  departure_city_code: 1776
+
+"Teztour Челябинск":
+  departure_city: "Челябинск"
+  operator_code: Teztour
+  departure_city_code: 1754
+

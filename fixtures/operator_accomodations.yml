@@ -1,0 +1,50 @@
+"Teztour DBL":
+  accomodation: "DBL"
+  operator_code: Teztour
+  accomodation_code: 2
+
+"Teztour SGL":
+  accomodation: "SGL"
+  operator_code: Teztour
+  accomodation_code: 1
+
+"Teztour DBL+EXB":
+  accomodation: "DBL+EXB"
+  operator_code: Teztour
+  accomodation_code: 3
+
+"Teztour SGL+CHD":
+  accomodation: "SGL+CHD"
+  operator_code: Teztour
+  accomodation_code: 14317
+
+"Teztour SGL+2CHD":
+  accomodation: "SGL+2CHD"
+  operator_code: Teztour
+  accomodation_code: 14357
+
+"Teztour DBL+CHD":
+  accomodation: "DBL+CHD"
+  operator_code: Teztour
+  accomodation_code: 14258
+
+"Teztour DBL+2CHD":
+  accomodation: "DBL+2CHD"
+  operator_code: Teztour
+  accomodation_code: 14356
+
+"Teztour DBL+EXB+ CHD":
+  accomodation: "DBL+EXB+ CHD"
+  operator_code: Teztour
+  accomodation_code: 21347
+
+"Teztour TRPL+2CHD":
+  accomodation: "TRPL+2CHD"
+  operator_code: Teztour
+  accomodation_code: 26274
+
+"Teztour 4PAX+CHD":
+  accomodation: "4PAX+CHD"
+  operator_code: Teztour
+  accomodation_code: 26275
+

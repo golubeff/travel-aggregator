@@ -1,0 +1,4 @@
+<% [ "RO", "BB", "HB", "FB", "AI", "UAL" ].each do |category| %>
+"<%= category %>":
+  title: "<%= category %>"
+<% end %>
