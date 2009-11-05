@@ -37,10 +37,10 @@ class Teztour
       #puts doc
       (doc.search("//tr[@class='tsr0']")<<doc.search("//tr[@class='tsr1']")).map do |tour|
 
-        tour.inner_html
-        #attributes = tour.search("td")
+        #tour.inner_html
+        attributes = tour.search("td")
 
-        #hotel = attributes[0].inner_html << attributes[1].inner_html << attributes[2].inner_html << attributes[3].inner_html << attributes[4].inner_html << attributes[5].inner_html << attributes[6].inner_html << attributes[7].inner_html << attributes[8].inner_html << attributes[9].inner_html << attributes[10].inner_html
+        hotel = attributes[0].inner_html << attributes[1].inner_html << attributes[2].inner_html << attributes[3].inner_html << attributes[4].inner_html << attributes[5].inner_html << attributes[6].inner_html << attributes[7].inner_html << attributes[8].inner_html << attributes[9].inner_html << attributes[10].inner_html
 
         #hotel_dop = hotel.search("nobr")
         #hotel_name = hotel_dop[0]
