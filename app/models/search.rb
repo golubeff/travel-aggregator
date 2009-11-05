@@ -11,8 +11,8 @@ class Search < ActiveRecord::Base
   belongs_to :accomodation
 
   def after_initialize
-    self.date_from = Time.now.to_date.to_s(:db)
-    self.date_till = (Time.now + 7.days).to_date.to_s(:db)
+    self.date_from = (Time.now + 3.days).to_date.to_s(:db)
+    self.date_till = (Time.now + 10.days).to_date.to_s(:db)
   end
 
   def results

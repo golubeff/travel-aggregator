@@ -3,5 +3,5 @@
 
 <%#= select 'resort_id', @resorts.map { |it| [ it.title, it.id ] }, { :include_blank => false } %>
 <% if @resorts %>
-<%= select(nil, nil, @resorts.map{|it| [ it.title, it.id]},{:name=>:resort_id, :include_blank=>true})%>
+<%= select('search', 'resort_id', @resorts.map{|it| [ it.title, it.id]},{:name=>:resort_id, :include_blank=>true})%>
 <% end %>

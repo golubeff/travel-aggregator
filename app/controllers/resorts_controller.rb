@@ -9,6 +9,7 @@ class ResortsController < ApplicationController
       puts "title - #{res.title}"
     end
     @resorts
+    render :layout => false
   end
 
 
