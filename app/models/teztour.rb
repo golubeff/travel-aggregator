@@ -24,15 +24,16 @@ class Teztour
       url << "&sortColumn=price%3Basc"
       # заглушка для локальной версии, парсим локальный файл
       # url = "http://book.teztour.com/book/actions/tourSearch.sdo?template=print&page=s%2Fpodbor&tsId=Xert
-#&countryId=1104&spoRegionSetId=&regionIdsSI=&cityId=345&dateFromF=25.10.2009&dateToF=30.10.2009&
-#nightsFrom=7&nightsTo=15&priceFrom=0.0&priceTo=15000
-#&hotelTypeId=2569
-#&hotelTypeBetter=on&hotelTypeBetter=off&pansionId=2424&pansionBetter=on&pansionBetter=off
-#&hotelStayTypeId=2&childAge1=4&childAge2=9&tsChoosedCountryId=1104&
-#tsChoosedRegionId=0&sortColumn=price%3Basc"
-      #url = 'http://localhost:3000/tez.html';
+      #&countryId=1104&spoRegionSetId=&regionIdsSI=&cityId=345&dateFromF=25.10.2009&dateToF=30.10.2009&
+      #nightsFrom=7&nightsTo=15&priceFrom=0.0&priceTo=15000
+      #&hotelTypeId=2569
+      #&hotelTypeBetter=on&hotelTypeBetter=off&pansionId=2424&pansionBetter=on&pansionBetter=off
+      #&hotelStayTypeId=2&childAge1=4&childAge2=9&tsChoosedCountryId=1104&
+      #tsChoosedRegionId=0&sortColumn=price%3Basc"
+      url = 'http://localhost:3000/tez.html';
       puts 'url == :: '
       puts url
+      hotel = ''
       doc = open(url) { |f| Hpricot(f) }
       #puts doc
       (doc.search("//tr[@class='tsr0']")<<doc.search("//tr[@class='tsr1']")).map do |tour|
@@ -48,9 +49,25 @@ class Teztour
         #hotel_name.inner_html
         #hotel.inner_html
         #puts "<br>== Found a TR tag ==<br>"
+        #puts "#{hotel}"
       end
-      
+      #парсин пегас пока из файла, потом надо будет сделать загрузку из url
+      url = 'http://localhost:3000/pegas_answer.html';
+      puts 'pegas url: '
+      puts url
+      doc = open(url) { |f| Hpricot(f) }
+        
+      (doc.search("script")).map do |tour|
+          
+        tour.to_s.gsub(/^(.+?)<tbody>/, '')
+        tour.to_s.gsub(/<\/sccript>$/, '')
+        tour.to_s.split(/<tr/)
+        puts ar
+      end
+
+
     end
+
   end
 
 end 
