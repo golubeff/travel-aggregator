@@ -53,18 +53,22 @@ class Teztour
       end
       #парсин пегас пока из файла, потом надо будет сделать загрузку из url
       url = 'http://localhost:3000/pegas_answer.html';
-      puts 'pegas url: '
-      puts url
-      doc = open(url) { |f| Hpricot(f) }
-        
-      (doc.search("script")).map do |tour|
-          
-        tour.to_s.gsub(/^(.+?)<tbody>/, '')
-        tour.to_s.gsub(/<\/sccript>$/, '')
-        tour.to_s.split(/<tr/)
-        puts ar
-      end
 
+      puts 'pegas url: '
+
+      puts url
+
+      doc = open(url) { |f| Hpricot(f) }
+
+      doc.search("//head").map do |tour|
+          
+
+        tour=tour.to_s.sub!(/^.*<tbody>/m, "")
+        tour=tour.to_s.gsub!(/\\/, "")
+        tour=tour.to_s.sub(/<\/script>.*$/m,"")
+        puts tour.to_s
+
+      end
 
     end
 
