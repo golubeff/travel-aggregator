@@ -30,10 +30,9 @@ class Teztour
       #&hotelTypeBetter=on&hotelTypeBetter=off&pansionId=2424&pansionBetter=on&pansionBetter=off
       #&hotelStayTypeId=2&childAge1=4&childAge2=9&tsChoosedCountryId=1104&
       #tsChoosedRegionId=0&sortColumn=price%3Basc"
-      url = 'http://localhost:3000/tez.html';
-      puts 'url == :: '
+      #url = 'http://localhost:3000/tez.html';
+      puts 'url teztour '
       puts url
-      hotel = ''
       doc = open(url) { |f| Hpricot(f) }
       #puts doc
       (doc.search("//tr[@class='tsr0']")<<doc.search("//tr[@class='tsr1']")).map do |tour|
@@ -41,7 +40,10 @@ class Teztour
         #tour.inner_html
         attributes = tour.search("td")
 
-        hotel = attributes[0].inner_html << attributes[1].inner_html << attributes[2].inner_html << attributes[3].inner_html << attributes[4].inner_html << attributes[5].inner_html << attributes[6].inner_html << attributes[7].inner_html << attributes[8].inner_html << attributes[9].inner_html << attributes[10].inner_html
+        puts  attributes.inner_html
+        #return attributes.inner_html
+        #puts attributes
+        #hotel = attributes[0].inner_html << attributes[1].inner_html << attributes[2].inner_html << attributes[3].inner_html << attributes[4].inner_html << attributes[5].inner_html << attributes[6].inner_html << attributes[7].inner_html << attributes[8].inner_html << attributes[9].inner_html << attributes[10].inner_html
 
         #hotel_dop = hotel.search("nobr")
         #hotel_name = hotel_dop[0]
@@ -50,24 +52,6 @@ class Teztour
         #hotel.inner_html
         #puts "<br>== Found a TR tag ==<br>"
         #puts "#{hotel}"
-      end
-      #парсин пегас пока из файла, потом надо будет сделать загрузку из url
-      url = 'http://localhost:3000/pegas_answer.html';
-
-      puts 'pegas url: '
-
-      puts url
-
-      doc = open(url) { |f| Hpricot(f) }
-
-      doc.search("//head").map do |tour|
-          
-
-        tour=tour.to_s.sub!(/^.*<tbody>/m, "")
-        tour=tour.to_s.gsub!(/\\/, "")
-        tour=tour.to_s.sub(/<\/script>.*$/m,"")
-        puts tour.to_s
-
       end
 
     end

@@ -17,6 +17,7 @@ class Search < ActiveRecord::Base
 
   def results
     Teztour.search(self)
+    Pegas.search(self)
   end
 
 end

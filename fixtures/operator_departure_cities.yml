@@ -3,15 +3,30 @@
   operator_code: Teztour
   departure_city_code: 345
 
+"Pegas Москва":
+  departure_city: "Москва"
+  operator_code: Pegas
+  departure_city_code: 2
+
 "Teztour Казань":
   departure_city: "Казань"
   operator_code: Teztour
   departure_city_code: 1107
 
+"Pegas Казань":
+  departure_city: "Казань"
+  operator_code: Pegas
+  departure_city_code: 74
+
 "Teztour Алматы":
   departure_city: "Алматы"
   operator_code: Teztour
   departure_city_code: 2707
+
+"Pegas Алматы":
+  departure_city: "Алматы"
+  operator_code: Pegas
+  departure_city_code: 0
 
 "Teztour Бухарест":
   departure_city: "Бухарест"

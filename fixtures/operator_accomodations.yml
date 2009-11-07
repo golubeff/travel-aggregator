@@ -3,6 +3,11 @@
   operator_code: Teztour
   accomodation_code: 2
 
+"Teztour 4 PAX":
+  accomodation: "4 PAX"
+  operator_code: Teztour
+  accomodation_code: 15352
+
 "Teztour SGL":
   accomodation: "SGL"
   operator_code: Teztour

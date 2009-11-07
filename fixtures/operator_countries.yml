@@ -3,53 +3,129 @@
   operator_code: Teztour
   country_code: 5732
 
+"Pegas Египет":
+  country: "Египет"
+  operator_code: Pegas
+  country_code: 3
+
 "Teztour Таиланд":
   country: "Таиланд"
   operator_code: Teztour
   country_code: 12695
+
+"Pegas Таиланд":
+  country: "Таиланд"
+  operator_code: Pegas
+  country_code: 8
 
 "Teztour Мальдивы":
   country: "Мальдивы"
   operator_code: Teztour
   country_code: 166775
 
+"Pegas Мальдивы":
+  country: "Мальдивы"
+  operator_code: Pegas
+  country_code: 0
+
 "Teztour Куба":
   country: "Куба"
   operator_code: Teztour
   country_code: 111137
+
+"Pegas Куба":
+  country: "Куба"
+  operator_code: Pegas
+  country_code: 0
 
 "Teztour Доминикана":
   country: "Доминикана"
   operator_code: Teztour
   country_code: 111241
 
+"Pegas Доминикана":
+  country: "Доминикана"
+  operator_code: Pegas
+  country_code: 0
+
 "Teztour Шри-Ланка":
   country: "Шри-Ланка"
   operator_code: Teztour
   country_code: 138865
+
+"Pegas Шри-Ланка":
+  country: "Шри-Ланка"
+  operator_code: Pegas
+  country_code: 0
 
 "Teztour Испания":
   country: "Испания"
   operator_code: Teztour
   country_code: 5733
 
+"Pegas Испания":
+  country: "Испания"
+  operator_code: Pegas
+  country_code: 0
+
 "Teztour Турция":
   country: "Турция"
   operator_code: Teztour
   country_code: 5735
+
+"Pegas Турция":
+  country: "Турция"
+  operator_code: Pegas
+  country_code: 4
 
 "Teztour Греция":
   country: "Греция"
   operator_code: Teztour
   country_code: 7067498
 
+"Pegas Греция":
+  country: "Греция"
+  operator_code: Pegas
+  country_code: 26
+
 "Teztour Андорра":
   country: "Андорра"
   operator_code: Teztour
   country_code: 257195
 
+"Pegas Андорра":
+  country: "Андорра"
+  operator_code: Pegas
+  country_code: 0
+
 "Teztour Австрия":
   country: "Австрия"
   operator_code: Teztour
   country_code: 147573
+
+"Pegas Австрия":
+  country: "Австрия"
+  operator_code: Pegas
+  country_code: 0
+
+"Pegas Индия":
+  country: "Индия"
+  operator_code: Pegas
+  country_code: 6
+
+"Teztour Индия":
+  country: "Индия"
+  operator_code: Teztour
+  country_code: 0
+
+"Pegas Индонезия":
+  country: "Индонезия"
+  operator_code: Pegas
+  country_code: 37
+
+"Teztour Индонезия":
+  country: "индонезия"
+  operator_code: Teztour
+  country_code: 0
+
 
