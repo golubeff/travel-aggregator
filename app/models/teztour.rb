@@ -30,7 +30,7 @@ class Teztour
       #&hotelTypeBetter=on&hotelTypeBetter=off&pansionId=2424&pansionBetter=on&pansionBetter=off
       #&hotelStayTypeId=2&childAge1=4&childAge2=9&tsChoosedCountryId=1104&
       #tsChoosedRegionId=0&sortColumn=price%3Basc"
-      url = 'http://localhost:3000/tez.html';
+      #url = 'http://localhost:3000/tez.html';
       puts 'url teztour '
       puts url
       doc = open(url) { |f| Hpricot(f) }
