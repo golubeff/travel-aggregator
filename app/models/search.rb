@@ -18,6 +18,8 @@ class Search < ActiveRecord::Base
   def results
     Teztour.search(self)
     Pegas.search(self)
+
+    #tz.to_s << pg.to_s
   end
 
 end

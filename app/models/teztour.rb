@@ -30,7 +30,7 @@ class Teztour
       #&hotelTypeBetter=on&hotelTypeBetter=off&pansionId=2424&pansionBetter=on&pansionBetter=off
       #&hotelStayTypeId=2&childAge1=4&childAge2=9&tsChoosedCountryId=1104&
       #tsChoosedRegionId=0&sortColumn=price%3Basc"
-      #url = 'http://localhost:3000/tez.html';
+      url = 'http://localhost:3000/tez.html';
       puts 'url teztour '
       puts url
       doc = open(url) { |f| Hpricot(f) }
@@ -41,6 +41,9 @@ class Teztour
         attributes = tour.search("td")
 
         puts  attributes.inner_html
+        #
+        #
+        #
         #return attributes.inner_html
         #puts attributes
         #hotel = attributes[0].inner_html << attributes[1].inner_html << attributes[2].inner_html << attributes[3].inner_html << attributes[4].inner_html << attributes[5].inner_html << attributes[6].inner_html << attributes[7].inner_html << attributes[8].inner_html << attributes[9].inner_html << attributes[10].inner_html
