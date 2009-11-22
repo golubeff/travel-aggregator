@@ -33,10 +33,19 @@ class Teztour
       #url = 'http://localhost:3000/tez.html';
       puts 'url teztour '
       puts url
+
+      @ar_str=();
+
+      # возвращаем пустой массив - если нет страны для этого оператора
+      if search.country.to_operator(OPERATOR_CODE).to_i == 0
+        @ar_str=[url,'']
+        return @ar_str
+      end
+
       doc = open(url) { |f| f.read }
       #puts doc
-      @ar_str=(0);
       if(doc.to_s !~ /<textarea cols=100>/m)
+        @ar_str = [url,'']
         return @ar_str
       end
       doc.to_s.sub!(/^.*<textarea cols=100>/m, "")
@@ -44,6 +53,7 @@ class Teztour
       @ar_str = doc.to_s.split("\n").map { |item| item.to_s.split("\t") }
       #@ar_str.shift()
       #print @ar_str.inspect
+      @ar_str.unshift(url)
       return @ar_str
     end
 

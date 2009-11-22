@@ -48,19 +48,19 @@
         <td><div id="resort_items"></div></td>
       </tr><tr>
         <td>Вылет из</td>
-        <td><%= f.select 'departure_city_id', DepartureCity.find(:all,:order => :title).map { |it| [ it.title, it.id ] }, { :include_blank => false } %></td>
+        <td><%= f.select 'departure_city_id', options_for_select(DepartureCity.find(:all,:order => :title).map { |it| [ it.title, it.id ] }, 765164156), { :include_blank => false } %></td>
       </tr>
       <tr>
         <td>Категория отеля</td>
-        <td><%= f.select 'hotel_category_id', HotelCategory.find(:all,:order => :title).map { |it| [ it.title, it.id ] }, { :include_blank => false } %></td>
+        <td><%= f.select 'hotel_category_id',options_for_select(HotelCategory.find(:all,:order => :title).map { |it| [ it.title, it.id ] }, 333320990), { :include_blank => false } %></td>
       </tr>
       <tr>
         <td>Пансион</td>
-        <td><%= f.select 'meal_id', Meal.find(:all,:order => :title).map { |it| [ it.title, it.id ] }, { :include_blank => false } %></td>
+        <td><%= f.select 'meal_id',options_for_select(Meal.find(:all,:order => :title).map { |it| [ it.title, it.id ] }, 666604944), { :include_blank => false } %></td>
       </tr>
       <tr>
         <td>Размещение</td>
-        <td><%= f.select 'accomodation_id', Accomodation.find(:all,:order => :title).map { |it| [ it.title, it.id ] }, { :include_blank => false } %></td>
+        <td><%= f.select 'accomodation_id',options_for_select(Accomodation.find(:all,:order => :title).map { |it| [ it.title, it.id ] }, 905436210), { :include_blank => false } %></td>
       </tr>
       <tr>
         <td>Дата:</td>

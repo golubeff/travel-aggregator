@@ -30,12 +30,16 @@ class Pegas
       #url = 'http://localhost:3000/pegas_answer_clear.html';
 
       puts 'pegas url: '
-
       puts url
 
+      @ar_str=()
+      # возвращаем пустой массив - если нет страны для этого оператора
+      if search.country.to_operator(OPERATOR_CODE).to_i == 0
+        @ar_str=[url,'']
+        return @ar_str
+      end
       doc = open(url) { |f| f.read }
       
-        @ar_str=(0)
         doc.to_s.sub!(/^.*<\/th><\/tr>/m, "")
         doc.to_s.gsub!(/\\/mi, "")
         doc.to_s.gsub!(/<td([^>]+){0,1}>/mi, "")
@@ -43,6 +47,7 @@ class Pegas
         doc.to_s.sub!(/<\/tbody><\/table>.*$/m,"")
         #print doc.to_s
         @ar_str=doc.to_s.split('</td></tr>').map { |item| item.to_s.split('</td>') }
+        @ar_str.unshift(url)
         return @ar_str
         #print @ar_str.size
 
