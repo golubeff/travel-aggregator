@@ -33,30 +33,18 @@ class Teztour
       #url = 'http://localhost:3000/tez.html';
       puts 'url teztour '
       puts url
-      doc = open(url) { |f| Hpricot(f) }
+      doc = open(url) { |f| f.read }
       #puts doc
-      (doc.search("//tr[@class='tsr0']")<<doc.search("//tr[@class='tsr1']")).map do |tour|
-
-        #tour.inner_html
-        attributes = tour.search("td")
-
-        puts  attributes.inner_html
-        #
-        #
-        #
-        #return attributes.inner_html
-        #puts attributes
-        #hotel = attributes[0].inner_html << attributes[1].inner_html << attributes[2].inner_html << attributes[3].inner_html << attributes[4].inner_html << attributes[5].inner_html << attributes[6].inner_html << attributes[7].inner_html << attributes[8].inner_html << attributes[9].inner_html << attributes[10].inner_html
-
-        #hotel_dop = hotel.search("nobr")
-        #hotel_name = hotel_dop[0]
-
-        #hotel_name.inner_html
-        #hotel.inner_html
-        #puts "<br>== Found a TR tag ==<br>"
-        #puts "#{hotel}"
+      @ar_str=(0);
+      if(doc.to_s !~ /<textarea cols=100>/m)
+        return @ar_str
       end
-
+      doc.to_s.sub!(/^.*<textarea cols=100>/m, "")
+      doc.to_s.sub!(/<\/textarea>.*/m, "")
+      @ar_str = doc.to_s.split("\n").map { |item| item.to_s.split("\t") }
+      #@ar_str.shift()
+      #print @ar_str.inspect
+      return @ar_str
     end
 
   end

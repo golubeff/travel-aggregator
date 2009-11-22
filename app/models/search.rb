@@ -16,9 +16,10 @@ class Search < ActiveRecord::Base
   end
 
   def results
-    Teztour.search(self)
-    Pegas.search(self)
-
+    @ar_tez=Teztour.search(self)
+    @ar_pegas=Pegas.search(self)
+    @hash={'teztour'=>@ar_tez,'pegas'=>@ar_pegas}
+    return @hash
     #tz.to_s << pg.to_s
   end
 

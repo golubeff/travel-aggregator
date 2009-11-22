@@ -1,4 +1,17 @@
-<%= debug @search.results%>
-
-
+<table>
+<% @search.results.map do |key, ar_hotels| %>
+  <%if key == 'teztour'%>
+  <thead><tr><th colspan="10">TezTour hotels</th></tr></thead>
+  <%else%>
+  <thead><tr><th colspan="10">Pegas touristik hotels</th></tr></thead>
+  <%end%>
+  <% ar_hotels.each do |hotel| %>
+  <tr>
+    <% hotel.each do |line| %>
+    <td><%= line %></td>
+    <% end %>
+  </tr>
+  <% end %>
+<% end  %>
+</table>
 
