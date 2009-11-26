@@ -17,13 +17,13 @@ class Search < ActiveRecord::Base
   end
 
   def results
-    @ar_tez=Teztour.search(self).to_a
+#    @ar_tez=Teztour.search(self).to_a
     @ar_pegas=Pegas.search(self).to_a
     @hash=  {
-              'teztour'=>{'url'=>@ar_tez.shift,'data'=>@ar_tez},
+#              'teztour'=>{'url'=>@ar_tez.shift,'data'=>@ar_tez},
               'pegas'=>{'url'=>@ar_pegas.shift,'data'=>@ar_pegas}
             }
-    #print @hash.inspect
+    print @hash.inspect
     return @hash
    
   end

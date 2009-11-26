@@ -47,7 +47,18 @@ class Pegas
         doc.to_s.gsub!(/<tr([^>]+){0,1}>/mi, "")
         doc.to_s.sub!(/<\/tbody><\/table>.*$/m,"")
         #print doc.to_s
-        @ar_str=doc.to_s.split('</td></tr>').map { |item| item.to_s.split('</td>') }
+        @ar_str=doc.to_s.split('</td></tr>').map { |item| item.to_s.split('</td>') }.map { |it| {'date'=>it[0],
+                                                                                                 'tur'=>it[1],
+                                                                                                 'nights'=>it[2],
+                                                                                                 'hotel'=>it[3],
+                                                                                                 'eda'=>it[4],
+                                                                                                 'nomer'=>it[5],
+                                                                                                 'cost'=>it[6],
+                                                                                                 'type of coast'=>it[7],
+                                                                                                 'econom'=>it[8],
+                                                                                                 'business'=>it[9]
+                                                                                                 }
+                                                                                          }
         @ar_str.unshift(url)
         return @ar_str
         #print @ar_str.size
