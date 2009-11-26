@@ -1,21 +1,34 @@
-<table>
-<% @search.results.map do |key, ar_hotels| %>
-  <%if key == 'teztour'%>
-  <thead><tr><th colspan="10">TezTour hotels: <a href="<%= ar_hotels['url'] %>" target="_blank">[check]</a></th></tr></thead>
-  <%else%>
-  <thead><tr><th colspan="10">Pegas touristik hotels: <a href="<%= ar_hotels['url'] %>" target="_blank">[check]</a></th></tr></thead>
-  <%end%>
-  <% if ar_hotels['data'].to_a.any? %>
-    <% ar_hotels['data'].to_a.each do |hotel| %>
-      <% if hotel.any? %>
+
+<table class="sortable">
+  <thead>
+    <tr>
+      <th>Дата</th>
+      <th>Ночей</th>
+      <th>Регион</th>
+      <th>Отель</th>
+      <th>Класс отеля</th>
+      <th>Тип номера/Проживание</th>
+      <th>Пансион</th>
+      <th>Цена</th>
+      <th class="nosort">Валюта</th>
+      <th>Оператор</th>
+    </tr>
+  </thead>
+  <tbody>
+<% @search.results.each do |hotel|  %>
         <tr>
-          <% hotel.each do |line| %>
-          <td><%= line %></td>
-          <% end %>
+          <td><%=hotel['date']%></td>
+          <td><%=hotel['nights']%></td>
+          <td><%=hotel['region']%></td>
+          <td><%=hotel['hotel']%></td>
+          <td><%=hotel['stars']%></td>
+          <td><%=hotel['nomer']%><% if hotel.key?('nomer_col_type') %>/ <%=hotel['nomer_col_type']%><% end  %></td>
+          <td><%=hotel['eda']%></td>
+          <td><%=hotel['coast']%></td>
+          <td><%=hotel['currency']%></td>
+          <td><%=hotel['operator']%></td>
         </tr>
-      <% end  %>
-    <% end %>
-  <% end %>
 <% end  %>
+  </tbody>
 </table>
 
