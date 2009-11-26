@@ -60,7 +60,8 @@ class Teztour
                                                                                                  'nomer_col_type'=>it[7],
                                                                                                  'eda'=>it[6],
                                                                                                  'coast'=>it[8],
-                                                                                                 'coast spo'=>it[9],
+                                                                                                 'currency'=>'USD',
+                                                                                                 'coast_spo'=>it[9],
                                                                                                  'link'=>it[10],
                                                                                                  'operator'=>OPERATOR_CODE
                                                                                                  }

@@ -25,7 +25,7 @@ class Pegas
       #PACKET=0& - х.з.
       #PRICEPAGE=1& - показывать страницу - по умолчанию первую
       #_=#{t_now}" - чтобы запрос не кешировался
-      url = "http://pegast.ru/samo5/search_tour?samo_action=PRICES&STATEINC=#{search.country.to_operator(OPERATOR_CODE)}&TOWNFROMINC=2&TOURINC=&CURRENCY=1&NIGHTS_FROM=7&NIGHTS_TILL=14&ADULT=2&CHECKIN_BEG=#{date_from}&CHECKIN_END=#{date_till}&AGES=&PACKET=0&PRICEPAGE=1&_=#{t_now}"
+      url = "http://pegast.ru/samo5/search_tour?samo_action=PRICES&STATEINC=#{search.country.to_operator(OPERATOR_CODE)}&TOWNFROMINC=2&TOURINC=&CURRENCY=2&NIGHTS_FROM=7&NIGHTS_TILL=14&ADULT=2&CHECKIN_BEG=#{date_from}&CHECKIN_END=#{date_till}&AGES=&PACKET=0&PRICEPAGE=1&_=#{t_now}"
       #парсин пегас пока из файла, потом надо будет сделать загрузку из url
       #url = 'http://localhost:3000/pegas_answer_clear.html';
 
@@ -41,6 +41,8 @@ class Pegas
       doc=Iconv.conv('utf-8', 'cp1251//IGNORE',  doc.to_s)
       
         doc.to_s.sub!(/^.*<\/th><\/tr>/m, "")
+        doc.to_s.sub!(/^.*<\/thead><tbody>/m, "")
+
         doc.to_s.gsub!(/\\/mi, "")
         doc.to_s.gsub!(/<td([^>]+){0,1}>/mi, "")
         doc.to_s.gsub!(/<tr([^>]+){0,1}>/mi, "")
@@ -55,7 +57,8 @@ class Pegas
                                                                                                  'nomer_col_type'=> $1,
                                                                                                  'coast'=>it[6].to_s.sub(/\s+([A-Z]+)$/i, ''),
                                                                                                  'currency'=> $1,
-                                                                                                 'type of coast'=>it[7],
+                                                                                                 'coast_spo'=>it[7],
+                                                                                                 'type_of_coast'=>it[7],
                                                                                                  'econom'=>it[8],
                                                                                                  'business'=>it[9],
                                                                                                  'operator'=>OPERATOR_CODE
