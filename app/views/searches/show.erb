@@ -10,6 +10,7 @@
       <th>Тип номера/Проживание</th>
       <th>Пансион</th>
       <th>Цена</th>
+      <th>СПО</th>
       <th class="nosort">Валюта</th>
       <th>Оператор</th>
     </tr>
@@ -25,6 +26,7 @@
           <td><%=hotel['nomer']%><% if hotel.key?('nomer_col_type') %> / <%=hotel['nomer_col_type']%><% end  %></td>
           <td><%=hotel['eda']%></td>
           <td><%=hotel['coast']%></td>
+          <td><%=hotel['coast_spo']%></td>
           <td><%=hotel['currency']%></td>
           <td><%=hotel['operator']%></td>
         </tr>
