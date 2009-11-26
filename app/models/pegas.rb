@@ -35,7 +35,6 @@ class Pegas
       @ar_str=()
       # возвращаем пустой массив - если нет страны для этого оператора
       if search.country.to_operator(OPERATOR_CODE).to_i == 0
-        #@ar_str=[url,'']
         return @ar_str
       end
       doc = open(url) { |f| f.read }
@@ -62,6 +61,12 @@ class Pegas
                                                                                                  'operator'=>OPERATOR_CODE
                                                                                                  }
                                                                                           }
+
+      if @ar_str[0]['date'].to_s.scan(/<script/).size>0
+        @ar_str=()
+        return @ar_str
+      end
+      
         puts @ar_str.inspect
         #print @ar_str.inspect
         return @ar_str
