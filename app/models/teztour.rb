@@ -43,6 +43,8 @@ class Teztour
       end
 
       doc = open(url) { |f| f.read }
+      doc=Iconv.conv('utf-8', 'cp1251//IGNORE',  doc.to_s)
+
       #puts doc
       if(doc.to_s !~ /<textarea cols=100>/m)
         @ar_str = [url,'']

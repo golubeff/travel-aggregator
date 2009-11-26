@@ -39,6 +39,7 @@ class Pegas
         return @ar_str
       end
       doc = open(url) { |f| f.read }
+      doc=Iconv.conv('utf-8', 'cp1251//IGNORE',  doc.to_s)
       
         doc.to_s.sub!(/^.*<\/th><\/tr>/m, "")
         doc.to_s.gsub!(/\\/mi, "")

@@ -1,5 +1,6 @@
-require 'hpricot'
+#require 'hpricot'
 require 'open-uri'
+require 'iconv'
 
 class Search < ActiveRecord::Base
 
