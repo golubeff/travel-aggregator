@@ -56,7 +56,8 @@ class Pegas
                                                                                                  'cost'=>it[6],
                                                                                                  'type of coast'=>it[7],
                                                                                                  'econom'=>it[8],
-                                                                                                 'business'=>it[9]
+                                                                                                 'business'=>it[9],
+                                                                                                 'operator'=>OPERATOR_CODE
                                                                                                  }
                                                                                           }
         @ar_str.unshift(url)
