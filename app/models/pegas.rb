@@ -47,11 +47,16 @@ class Pegas
         doc.to_s.gsub!(/<td([^>]+){0,1}>/mi, "")
         doc.to_s.gsub!(/<tr([^>]+){0,1}>/mi, "")
         doc.to_s.sub!(/<\/tbody><\/table>.*$/m,"")
+
+
+        puts doc.inspect
+
         @ar_str=doc.to_s.split('</td></tr>').map { |item| item.to_s.split('</td>') }.map { |it| {'date'=>it[0],
                                                                                                  'region'=>it[1],
                                                                                                  'nights'=>it[2],
                                                                                                  'hotel'=>it[3].to_s.sub(/(\d{1}\*\+{0,1})/i,''),
                                                                                                  'stars'=>$1,
+                                                                                                 'bron_link'=>it[3].to_s.sub(/<a href="([^"]+)".*$/i,'') + $1,
                                                                                                  'eda'=>it[4],
                                                                                                  'nomer'=>it[5].to_s.sub(/\/(\w+)$/,''),
                                                                                                  'nomer_col_type'=> $1,
@@ -70,7 +75,6 @@ class Pegas
         return @ar_str
       end
       
-        puts @ar_str.inspect
         #print @ar_str.inspect
         return @ar_str
 

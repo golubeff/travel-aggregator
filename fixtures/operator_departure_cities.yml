@@ -3,40 +3,20 @@
   operator_code: Teztour
   departure_city_code: 345
 
-"Pegas Москва":
-  departure_city: "Москва"
-  operator_code: Pegas
-  departure_city_code: 2
-
 "Teztour Казань":
   departure_city: "Казань"
   operator_code: Teztour
   departure_city_code: 1107
-
-"Pegas Казань":
-  departure_city: "Казань"
-  operator_code: Pegas
-  departure_city_code: 74
 
 "Teztour Алматы":
   departure_city: "Алматы"
   operator_code: Teztour
   departure_city_code: 2707
 
-"Pegas Алматы":
-  departure_city: "Алматы"
-  operator_code: Pegas
-  departure_city_code: 0
-
 "Teztour Бухарест":
   departure_city: "Бухарест"
   operator_code: Teztour
   departure_city_code: 9001185
-
-"Teztour CLUJ-NAPOCA":
-  departure_city: "CLUJ-NAPOCA"
-  operator_code: Teztour
-  departure_city_code: 75189
 
 "Teztour Днепропетровск":
   departure_city: "Днепропетровск"
@@ -57,11 +37,6 @@
   departure_city: "Гомель"
   operator_code: Teztour
   departure_city_code: 4387
-
-"Teztour IASI":
-  departure_city: "IASI"
-  operator_code: Teztour
-  departure_city_code: 5100566
 
 "Teztour Харьков":
   departure_city: "Харьков"
@@ -98,8 +73,8 @@
   operator_code: Teztour
   departure_city_code: 2672
 
-"Teztour RIGA":
-  departure_city: "RIGA"
+"Teztour Рига":
+  departure_city: "Рига"
   operator_code: Teztour
   departure_city_code: 523
 
@@ -128,8 +103,8 @@
   operator_code: Teztour
   departure_city_code: 2680
 
-"Teztour TALLINN":
-  departure_city: "TALLINN"
+"Teztour Таллин":
+  departure_city: "Таллин"
   operator_code: Teztour
   departure_city_code: 3746
 
@@ -148,13 +123,13 @@
   operator_code: Teztour
   departure_city_code: 1813
 
-"Teztour VARNA":
-  departure_city: "VARNA"
+"Teztour Варна":
+  departure_city: "Варна"
   operator_code: Teztour
   departure_city_code: 4102819
 
-"Teztour VILNIUS":
-  departure_city: "VILNIUS"
+"Teztour Вильнюс":
+  departure_city: "Вильнюс"
   operator_code: Teztour
   departure_city_code: 4800
 
@@ -203,3 +178,384 @@
   operator_code: Teztour
   departure_city_code: 1754
 
+"Teztour Белгород":
+  departure_city: "Белгород"
+  operator_code: Teztour
+  departure_city_code: 0
+
+"Teztour Брянск":
+  departure_city: "Брянск"
+  operator_code: Teztour
+  departure_city_code: 0
+
+"Teztour Владивосток":
+  departure_city: "Владивосток"
+  operator_code: Teztour
+  departure_city_code: 0
+
+"Teztour Воронеж":
+  departure_city: "Воронеж"
+  operator_code: Teztour
+  departure_city_code: 0
+
+"Teztour Иркутск":
+  departure_city: "Иркутск"
+  operator_code: Teztour
+  departure_city_code: 0
+
+"Teztour Калининград":
+  departure_city: "Калининград"
+  operator_code: Teztour
+  departure_city_code: 0
+
+"Teztour Кемерово":
+  departure_city: "Кемерово"
+  operator_code: Teztour
+  departure_city_code: 0
+
+"Teztour Курск":
+  departure_city: "Курск"
+  operator_code: Teztour
+  departure_city_code: 0
+
+"Teztour Магнитогорск":
+  departure_city: "Магнитогорск"
+  operator_code: Teztour
+  departure_city_code: 0
+
+"Teztour Минеральные Воды":
+  departure_city: "Минеральные Воды"
+  operator_code: Teztour
+  departure_city_code: 0
+
+"Teztour Нижнекамск":
+  departure_city: "Нижнекамск"
+  operator_code: Teztour
+  departure_city_code: 0
+
+"Teztour Нижний Новгород":
+  departure_city: "Нижний Новгород"
+  operator_code: Teztour
+  departure_city_code: 0
+
+"Teztour Оренбург":
+  departure_city: "Оренбург"
+  operator_code: Teztour
+  departure_city_code: 0
+
+"Teztour Орск":
+  departure_city: "Орск"
+  operator_code: Teztour
+  departure_city_code: 0
+
+"Teztour Саратов":
+  departure_city: "Саратов"
+  operator_code: Teztour
+  departure_city_code: 0
+
+"Teztour Ставрополь":
+  departure_city: "Ставрополь"
+  operator_code: Teztour
+  departure_city_code: 0
+
+"Teztour Хабаровск":
+  departure_city: "Хабаровск"
+  operator_code: Teztour
+  departure_city_code: 0
+
+"Teztour Ханты Мансийск":
+  departure_city: "Ханты Мансийск"
+  operator_code: Teztour
+  departure_city_code: 0
+
+"Teztour Чебоксары":
+  departure_city: Чебоксары
+  operator_code: Teztour
+  departure_city_code: 0
+
+"Teztour Якутск":
+  departure_city: Якутск
+  operator_code: Teztour
+  departure_city_code: 0
+
+"Pegas Москва":
+  departure_city: "Москва"
+  operator_code: Pegas
+  departure_city_code: 2
+
+
+"Pegas Казань":
+  departure_city: "Казань"
+  operator_code: Pegas
+  departure_city_code: 74
+
+"Pegas Алматы":
+  departure_city: "Алматы"
+  operator_code: Pegas
+  departure_city_code: 0
+
+
+"Pegas Бухарест":
+  departure_city: "Бухарест"
+  operator_code: Pegas
+  departure_city_code: 0
+
+"Pegas Днепропетровск":
+  departure_city: "Днепропетровск"
+  operator_code: Pegas
+  departure_city_code: 0
+
+"Pegas Донецк":
+  departure_city: "Донецк"
+  operator_code: Pegas
+  departure_city_code: 0
+
+"Pegas Екатеринбург":
+  departure_city: "Екатеринбург"
+  operator_code: Pegas
+  departure_city_code: 64
+
+"Pegas Гомель":
+  departure_city: "Гомель"
+  operator_code: Pegas
+  departure_city_code: 0
+
+"Pegas Харьков":
+  departure_city: "Харьков"
+  operator_code: Pegas
+  departure_city_code: 0
+
+"Pegas Киев":
+  departure_city: "Киев"
+  operator_code: Pegas
+  departure_city_code: 0
+
+"Pegas Красноярск":
+  departure_city: "Красноярск"
+  operator_code: Pegas
+  departure_city_code: 80
+
+"Pegas Львов":
+  departure_city: "Львов"
+  operator_code: Pegas
+  departure_city_code: 0
+
+"Pegas Минск":
+  departure_city: "Минск"
+  operator_code: Pegas
+  departure_city_code: 86
+
+"Pegas Одесса":
+  departure_city: "Одесса"
+  operator_code: Pegas
+  departure_city_code: 0
+
+"Pegas Омск":
+  departure_city: "Омск"
+  operator_code: Pegas
+  departure_city_code: 99
+
+"Pegas Рига":
+  departure_city: "Рига"
+  operator_code: Pegas
+  departure_city_code: 0
+
+"Pegas Ростов-на-Дону":
+  departure_city: "Ростов-на-Дону"
+  operator_code: Pegas
+  departure_city_code: 144
+
+"Pegas Санкт-Петербург":
+  departure_city: "Санкт-Петербург"
+  operator_code: Pegas
+  departure_city_code: 51
+
+"Pegas Самара":
+  departure_city: "Самара"
+  operator_code: Pegas
+  departure_city_code: 117
+
+"Pegas София":
+  departure_city: "София"
+  operator_code: Pegas
+  departure_city_code: 0
+
+"Pegas Сургут":
+  departure_city: "Сургут"
+  operator_code: Pegas
+  departure_city_code: 124
+
+"Pegas Таллин":
+  departure_city: "Таллин"
+  operator_code: Pegas
+  departure_city_code: 0
+
+"Pegas Тимишоара":
+  departure_city: "Тимишоара"
+  operator_code: Pegas
+  departure_city_code: 0
+
+"Pegas Уфа":
+  departure_city: "Уфа"
+  operator_code: Pegas
+  departure_city_code: 131
+
+"Pegas Ульяновск":
+  departure_city: "Ульяновск"
+  operator_code: Pegas
+  departure_city_code: 133
+
+"Pegas Варна":
+  departure_city: "Варна"
+  operator_code: Pegas
+  departure_city_code: 0
+
+"Pegas Вильнюс":
+  departure_city: "Вильнюс"
+  operator_code: Pegas
+  departure_city_code: 0
+
+"Pegas Волгоград":
+  departure_city: "Волгоград"
+  operator_code: Pegas
+  departure_city_code: 138
+
+"Pegas Ереван":
+  departure_city: "Ереван"
+  operator_code: Pegas
+  departure_city_code: 0
+
+"Pegas Краснодар":
+  departure_city: "Краснодар"
+  operator_code: Pegas
+  departure_city_code: 79
+
+"Pegas Нижневартовск":
+  departure_city: "Нижневартовск"
+  operator_code: Pegas
+  departure_city_code: 93
+
+"Pegas Новосибирск":
+  departure_city: "Новосибирск"
+  operator_code: Pegas
+  departure_city_code: 97
+
+"Pegas Пермь":
+  departure_city: "Пермь"
+  operator_code: Pegas
+  departure_city_code: 105
+
+"Pegas Сыктывкар":
+  departure_city: "Сыктывкар"
+  operator_code: Pegas
+  departure_city_code: 506
+
+"Pegas Тюмень":
+  departure_city: "Тюмень"
+  operator_code: Pegas
+  departure_city_code: 129
+
+"Pegas Челябинск":
+  departure_city: "Челябинск"
+  operator_code: Pegas
+  departure_city_code: 61
+
+"Pegas Белгород":
+  departure_city: "Белгород"
+  operator_code: Pegas
+  departure_city_code: 57
+
+"Pegas Брянск":
+  departure_city: "Брянск"
+  operator_code: Pegas
+  departure_city_code: 59
+
+"Pegas Владивосток":
+  departure_city: "Владивосток"
+  operator_code: Pegas
+  departure_city_code: 137
+
+"Pegas Воронеж":
+  departure_city: "Воронеж"
+  operator_code: Pegas
+  departure_city_code: 140
+
+"Pegas Иркутск":
+  departure_city: "Иркутск"
+  operator_code: Pegas
+  departure_city_code: 69
+
+"Pegas Калининград":
+  departure_city: "Калининград"
+  operator_code: Pegas
+  departure_city_code: 71
+
+"Pegas Кемерово":
+  departure_city: "Кемерово"
+  operator_code: Pegas
+  departure_city_code: 75
+
+"Pegas Курск":
+  departure_city: "Курск"
+  operator_code: Pegas
+  departure_city_code: 82
+
+"Pegas Магнитогорск":
+  departure_city: "Магнитогорск"
+  operator_code: Pegas
+  departure_city_code: 85
+
+"Pegas Минеральные Воды":
+  departure_city: "Минеральные Воды"
+  operator_code: Pegas
+  departure_city_code: 338
+
+"Pegas Нижнекамск":
+  departure_city: "Нижнекамск"
+  operator_code: Pegas
+  departure_city_code: 92
+
+"Pegas Нижний Новгород":
+  departure_city: "Нижний Новгород"
+  operator_code: Pegas
+  departure_city_code: 88
+
+"Pegas Оренбург":
+  departure_city: "Оренбург"
+  operator_code: Pegas
+  departure_city_code: 101
+
+"Pegas Орск":
+  departure_city: "Орск"
+  operator_code: Pegas
+  departure_city_code: 102
+
+"Pegas Саратов":
+  departure_city: "Саратов"
+  operator_code: Pegas
+  departure_city_code: 119
+
+"Pegas Ставрополь":
+  departure_city: "Ставрополь"
+  operator_code: Pegas
+  departure_city_code: 200
+
+"Pegas Хабаровск":
+  departure_city: "Хабаровск"
+  operator_code: Pegas
+  departure_city_code: 66
+
+"Pegas Ханты Мансийск":
+  departure_city: "Ханты Мансийск"
+  operator_code: Pegas
+  departure_city_code: 145
+
+"Pegas Чебоксары":
+  departure_city: Чебоксары
+  operator_code: Pegas
+  departure_city_code: 60
+
+"Pegas Якутск":
+  departure_city: Якутск
+  operator_code: Pegas
+  departure_city_code: 240

@@ -53,3 +53,68 @@
   operator_code: Teztour
   accomodation_code: 26275
 
+"Teztour Не важно":
+  accomodation: "Не важно"
+  operator_code: Teztour
+  accomodation_code: 0
+
+"Pegas DBL":
+  accomodation: "DBL"
+  operator_code: Pegas
+  accomodation_code: 2
+
+"Pegas 4 PAX":
+  accomodation: "4 PAX"
+  operator_code: Pegas
+  accomodation_code: 4
+
+"Pegas SGL":
+  accomodation: "SGL"
+  operator_code: Pegas
+  accomodation_code: 1
+
+"Pegas DBL+EXB":
+  accomodation: "DBL+EXB"
+  operator_code: Pegas
+  accomodation_code: 2
+
+"Pegas SGL+CHD":
+  accomodation: "SGL+CHD"
+  operator_code: Pegas
+  accomodation_code: 1
+
+"Pegas SGL+2CHD":
+  accomodation: "SGL+2CHD"
+  operator_code: Pegas
+  accomodation_code: 1
+
+"Pegas DBL+CHD":
+  accomodation: "DBL+CHD"
+  operator_code: Pegas
+  accomodation_code: 2
+
+"Pegas DBL+2CHD":
+  accomodation: "DBL+2CHD"
+  operator_code: Pegas
+  accomodation_code: 2
+
+"Pegas DBL+EXB+ CHD":
+  accomodation: "DBL+EXB+ CHD"
+  operator_code: Pegas
+  accomodation_code: 2
+
+"Pegas TRPL+2CHD":
+  accomodation: "TRPL+2CHD"
+  operator_code: Pegas
+  accomodation_code: 3
+
+"Pegas 4PAX+CHD":
+  accomodation: "4PAX+CHD"
+  operator_code: Pegas
+  accomodation_code: 4
+
+"Pegas Не важно":
+  accomodation: "Не важно"
+  operator_code: Pegas
+  accomodation_code: 0
+

@@ -13,6 +13,7 @@
       <th>СПО</th>
       <th class="nosort">Валюта</th>
       <th>Оператор</th>
+      <th class="nosort">Бронировать</th>
     </tr>
   </thead>
   <tbody>
@@ -29,6 +30,7 @@
           <td><%=hotel['coast_spo']%></td>
           <td><%=hotel['currency']%></td>
           <td><%=hotel['operator']%></td>
+          <td><a href="<%=hotel['bron_link']%>" target="_blank">[бронировать]</a></td>
         </tr>
 <% end  %>
   </tbody>

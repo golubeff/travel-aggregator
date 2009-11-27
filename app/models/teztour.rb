@@ -51,6 +51,7 @@ class Teztour
       end
       doc.to_s.sub!(/^.*<textarea cols=100>/m, "")
       doc.to_s.sub!(/<\/textarea>.*/m, "")
+      puts doc.inspect
       @ar_str = doc.to_s.split("\n").map { |item| item.to_s.split("\t") }.map { |it| {           'date'=>it[0],
                                                                                                  'nights'=>it[1],
                                                                                                  'region'=>it[2],
@@ -62,13 +63,13 @@ class Teztour
                                                                                                  'coast'=>it[8],
                                                                                                  'currency'=>'USD',
                                                                                                  'coast_spo'=>it[9],
-                                                                                                 'link'=>it[10],
+                                                                                                 'bron_link'=>it[10].to_s.sub(/^.*http/,"http").sub(/\&\#034\;.*$/,""),
                                                                                                  'operator'=>OPERATOR_CODE
                                                                                                  }
                                                                                           }
       #@ar_str.unshift(url)
       @ar_str.shift
-      puts @ar_str.inspect
+      
       #@ar_str.unshift(url)
       return @ar_str
     end
