@@ -4,14 +4,15 @@
       <td>Страна</td>
       <td><%= f.select 'country_id',
             Country.find(:all,:order => :title).map { |it| [it.title, it.id] },
-            { :include_blank => false },
-              :onchange => remote_function(:update => "resort_items",
-      :url => resorts_path,
-      :with => "'country_id='+$('search_country_id').value",
-      :method => :get,
-      404 => "alert('error '+response.text)"
-
-      ) %></td>
+            { :include_blank => false }
+              #,
+              #:onchange => remote_function( :update => "resort_items",
+                                            #:url => resorts_path,
+                                            #:with => "'country_id='+$('search_country_id').value",
+                                            #:method => :get,
+                                            #404 => "alert('error '+response.text)"
+                                            #)
+    %></td>
     <script>
 <%#
       //:complete => "var x = eval('(' + request.responseText + ')'); alert(var_dump(x));"
@@ -43,24 +44,24 @@
 }
 
     </script>
-    </tr><tr>
+    </tr><!--tr>
         <td>Курорт</td>
         <td><div id="resort_items"></div></td>
-      </tr><tr>
+      </tr><tr-->
         <td>Вылет из</td>
-        <td><%= f.select 'departure_city_id', options_for_select(DepartureCity.find(:all,:order => :title).map { |it| [ it.title, it.id ] }, 765164156), { :include_blank => false } %></td>
+        <td><%= f.select 'departure_city_id', options_for_select(DepartureCity.find(:all,:order => :title).map { |it| [ it.title, it.id ] }, ""), { :include_blank => true } %></td>
       </tr>
       <tr>
         <td>Категория отеля</td>
-        <td><%= f.select 'hotel_category_id',options_for_select(HotelCategory.find(:all,:order => :title).map { |it| [ it.title, it.id ] }, 333320990), { :include_blank => false } %></td>
+        <td><%= f.select 'hotel_category_id',options_for_select(HotelCategory.find(:all,:order => :title).map { |it| [ it.title, it.id ] }, ""), { :include_blank => true } %></td>
       </tr>
       <tr>
         <td>Пансион</td>
-        <td><%= f.select 'meal_id',options_for_select(Meal.find(:all,:order => :title).map { |it| [ it.title, it.id ] }, 666604944), { :include_blank => false } %></td>
+        <td><%= f.select 'meal_id',options_for_select(Meal.find(:all,:order => :title).map { |it| [ it.title, it.id ] }, ""), { :include_blank => true } %></td>
       </tr>
       <tr>
         <td>Размещение</td>
-        <td><%= f.select 'accomodation_id',options_for_select(Accomodation.find(:all,:order => :title).map { |it| [ it.title, it.id ] }, 905436210), { :include_blank => false } %></td>
+        <td><%= f.select 'accomodation_id',options_for_select(Accomodation.find(:all,:order => :title).map { |it| [ it.title, it.id ] }, ""), { :include_blank => true } %></td>
       </tr>
       <tr>
         <td>Дата:</td>

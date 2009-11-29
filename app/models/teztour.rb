@@ -12,14 +12,22 @@ class Teztour
 
       url = 'http://book.teztour.com/book/actions/tourSearch.sdo?template=print&page=s%2Fpodbor&tsId=Xert'
       url << "&countryId=#{search.country.to_operator(OPERATOR_CODE)}&spoRegionSetId=&regionIdsSI="
-      url << "&cityId=#{search.departure_city.to_operator(OPERATOR_CODE)}"
+      if search.departure_city_id
+        url << "&cityId=#{search.departure_city.to_operator(OPERATOR_CODE)}"
+      end
       url << "&dateFromF=#{date_from}"
       url << "&dateToF=#{date_till}"
       url << "nightsFrom=7&nightsTo=15&priceFrom=0.0&priceTo=15000"
-      url << "&hotelTypeId=#{search.hotel_category.to_operator(OPERATOR_CODE)}"
-      url << "&hotelTypeBetter=on&hotelTypeBetter=off"
-      url << "&pansionId=#{search.meal.to_operator(OPERATOR_CODE)}&pansionBetter=on&pansionBetter=off"
-      url << "&hotelStayTypeId=#{search.accomodation.to_operator(OPERATOR_CODE)}&childAge1=4&childAge2=9"
+      if search.hotel_category_id?
+        url << "&hotelTypeId=#{search.hotel_category.to_operator(OPERATOR_CODE)}&hotelTypeBetter=off"
+      end
+      if search.meal_id?
+        url << "&pansionId=#{search.meal.to_operator(OPERATOR_CODE)}&pansionBetter=off"
+      end
+      if search.accomodation_id?
+        url << "&hotelStayTypeId=#{search.accomodation.to_operator(OPERATOR_CODE)}"
+      end
+      url << "&childAge1=4&childAge2=9"
       url << "&tsChoosedCountryId=#{search.country.to_operator(OPERATOR_CODE)}&tsChoosedRegionId=0"
       url << "&sortColumn=price%3Basc"
       # заглушка для локальной версии, парсим локальный файл
@@ -31,8 +39,9 @@ class Teztour
       #&hotelStayTypeId=2&childAge1=4&childAge2=9&tsChoosedCountryId=1104&
       #tsChoosedRegionId=0&sortColumn=price%3Basc"
       #url = 'http://localhost:3000/tez.html';
-      puts 'url teztour '
-      puts url
+
+      #puts 'url teztour '
+      #puts url
 
       @ar_str=();
 

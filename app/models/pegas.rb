@@ -25,12 +25,27 @@ class Pegas
       #PACKET=0& - х.з.
       #PRICEPAGE=1& - показывать страницу - по умолчанию первую
       #_=#{t_now}" - чтобы запрос не кешировался
-      url = "http://pegast.ru/samo5/search_tour?samo_action=PRICES&STATEINC=#{search.country.to_operator(OPERATOR_CODE)}&TOWNFROMINC=2&TOURINC=&CURRENCY=2&NIGHTS_FROM=7&NIGHTS_TILL=14&ADULT=2&CHECKIN_BEG=#{date_from}&CHECKIN_END=#{date_till}&AGES=&PACKET=0&PRICEPAGE=1&_=#{t_now}"
+      url = "http://pegast.ru/samo5/search_tour?"
+      url << "samo_action=PRICES&STATEINC=#{search.country.to_operator(OPERATOR_CODE)}"
+      if search.meal_id?
+        url << "&MEAL=#{search.meal.to_operator(OPERATOR_CODE)}"
+      end
+      if search.hotel_category_id?
+        url << "&STARS=#{search.hotel_category.to_operator(OPERATOR_CODE)}"
+      end
+      if search.departure_city_id
+        url << "&TOWNFROMINC=#{search.departure_city.to_operator(OPERATOR_CODE)}"
+      end
+      url << "&TOURINC=&CURRENCY=2&NIGHTS_FROM=7&NIGHTS_TILL=14"
+      if search.accomodation_id?
+      url << "&ADULT=#{search.accomodation.to_operator(OPERATOR_CODE)}"
+      end
+      url << "&CHECKIN_BEG=#{date_from}&CHECKIN_END=#{date_till}&AGES=&PACKET=0&PRICEPAGE=1&_=#{t_now}"
       #парсин пегас пока из файла, потом надо будет сделать загрузку из url
       #url = 'http://localhost:3000/pegas_answer_clear.html';
 
-      puts 'pegas url: '
-      puts url
+      #puts 'pegas url: '
+      #puts url
 
       @ar_str=()
       # возвращаем пустой массив - если нет страны для этого оператора

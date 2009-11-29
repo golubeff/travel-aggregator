@@ -28,11 +28,6 @@
   operator_code: Teztour
   meal_code: 5738
 
-"Teztour Не важно":
-  meal: "Не важно"
-  operator_code: Teztour
-  meal_code: 0
-
 
 "Pegas RO":
   meal: "RO"
@@ -64,8 +59,4 @@
   operator_code: Pegas
   meal_code: 11
 
-"Pegas Не важно":
-  meal: "Не важно"
-  operator_code: Pegas
-  meal_code: 0
 

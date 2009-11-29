@@ -73,3 +73,77 @@
   operator_code: Teztour
   hotel_category_code: 2571
 
+"Pegas Ap.Htl":
+  hotel_category: "Ap.Htl"
+  operator_code: Pegas
+  hotel_category_code: 0
+
+"Pegas Apts":
+  hotel_category: "Apts"
+  operator_code: Pegas
+  hotel_category_code: 0
+
+"Pegas Pens":
+  hotel_category: "Pens"
+  operator_code: Pegas
+  hotel_category_code: 0
+
+"Pegas 1*":
+  hotel_category: "1 *"
+  operator_code: Pegas
+  hotel_category_code: 0
+
+"Pegas 2*":
+  hotel_category: "2 *"
+  operator_code: Pegas
+  hotel_category_code: 7
+
+"Pegas 2+*":
+  hotel_category: "2+ *"
+  operator_code: Pegas
+  hotel_category_code: 7
+
+"Pegas HV-3":
+  hotel_category: "HV-3"
+  operator_code: Pegas
+  hotel_category_code: 32844
+
+"Pegas 3*":
+  hotel_category: "3 *"
+  operator_code: Pegas
+  hotel_category_code: 8
+
+"Pegas 3+*":
+  hotel_category: "3+ *"
+  operator_code: Pegas
+  hotel_category_code: 8
+
+"Pegas HV-2":
+  hotel_category: "HV-2"
+  operator_code: Pegas
+  hotel_category_code: 0
+
+"Pegas 4*":
+  hotel_category: "4 *"
+  operator_code: Pegas
+  hotel_category_code: 9
+
+"Pegas 4+*":
+  hotel_category: "4+ *"
+  operator_code: Pegas
+  hotel_category_code: 9
+
+"Pegas 5*":
+  hotel_category: "5 *"
+  operator_code: Pegas
+  hotel_category_code: 10
+
+"Pegas 5*/HV-1":
+  hotel_category: "5*/HV-1"
+  operator_code: Pegas
+  hotel_category_code: 10
+
+"Pegas HV-1":
+  hotel_category: "HV-1"
+  operator_code: Pegas
+  hotel_category_code: 0
