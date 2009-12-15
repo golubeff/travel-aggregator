@@ -53,10 +53,6 @@
   operator_code: Teztour
   accomodation_code: 26275
 
-"Teztour Не важно":
-  accomodation: "Не важно"
-  operator_code: Teztour
-  accomodation_code: 0
 
 "Pegas DBL":
   accomodation: "DBL"
@@ -112,9 +108,4 @@
   accomodation: "4PAX+CHD"
   operator_code: Pegas
   accomodation_code: 4
-
-"Pegas Не важно":
-  accomodation: "Не важно"
-  operator_code: Pegas
-  accomodation_code: 0
 
