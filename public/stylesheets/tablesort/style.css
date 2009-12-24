@@ -1,6 +1,6 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 76%;
+	font-size: 9pt;
 }
 #content {
 	padding: 3em;
@@ -12,6 +12,7 @@ table {
 td, th {
 	padding: 0.5em;
 	border: 1px solid #CCC;
+  font-size:9pt;
 }
 
 thead, tfoot {
@@ -36,6 +37,28 @@ tr.roweven {
 	background-color: #DDFFAC;
 	background-image: url(/stylesheets/tablesort/up.gif);
 }
+
+div.tickets_home {
+  background:url(/images/f_left.gif);
+}
+
+div.tickets_out, div.tickets_home {
+  width:21px;
+  height: 14px;
+  overflow:hidden;
+  background-repeat:no-repeat;
+  background-position:100px 0;
+  display:table-cell;
+}
+
+div.tickets_out {
+  background-image:url(/images/f_right.gif);
+}
+
+div.N { background-position:-21px 0; }
+div.R { background-position:-42px 0; }
+div.Y { background-position:0 0; }  
+
 .sortdesc {
 	background-color: #B9DDFF;
 	background-image: url(/stylesheets/tablesort/down.gif);

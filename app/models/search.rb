@@ -1,4 +1,3 @@
-#require 'hpricot'
 require 'open-uri'
 require 'iconv'
 
@@ -17,11 +16,10 @@ class Search < ActiveRecord::Base
   end
 
   def results
-    @ar_tez=Teztour.search(self).to_a
-    @ar_pegas=Pegas.search(self).to_a
+    @ar_tez = Teztour.search(self)
+    @ar_pegas = Pegas.search(self)
 
     @ar_pegas + @ar_tez
-   
   end
 
 end

@@ -6,30 +6,32 @@
       <th>Ночей</th>
       <th>Регион</th>
       <th>Отель</th>
-      <th>Класс отеля</th>
-      <th>Тип номера/Проживание</th>
-      <th>Пансион</th>
+      <th>Номер/Проживание</th>
+      <th>Питание</th>
       <th>Цена</th>
-      <th>СПО</th>
-      <th class="nosort">Валюта</th>
-      <th>Оператор</th>
+      <th>Эконом</th>
+      <th>Бизнес</th>
       <th class="nosort">Бронировать</th>
     </tr>
   </thead>
   <tbody>
 <% @search.results.each do |hotel|  %>
-        <tr>
-          <td><%=hotel['date']%></td>
-          <td><%=hotel['nights']%></td>
-          <td><%=hotel['region']%></td>
-          <td><%=hotel['hotel']%></td>
-          <td><%=hotel['stars']%></td>
-          <td><%=hotel['nomer']%><% if hotel.key?('nomer_col_type') %> / <%=hotel['nomer_col_type']%><% end  %></td>
-          <td><%=hotel['eda']%></td>
-          <td><%=hotel['coast']%></td>
-          <td><%=hotel['coast_spo']%></td>
-          <td><%=hotel['currency']%></td>
-          <td><%=hotel['operator']%></td>
+          <tr style="background-color:<%= hotel[:hotel_available] ? cycle("#EEEEEE", "#DDD") : cycle('#FFCCCC', '#FFDDDD') %>">
+          <td><%=hotel[:date]%></td>
+          <td><%=hotel[:nights]%></td>
+          <td><%=hotel[:region]%></td>
+          <td><a target="_blank" href="/hotels/<%=h hotel[:hotel] %> <%=h hotel[:stars] %>"><%=hotel[:hotel]%> <%= hotel[:stars] %></a></td>
+          <td><%=hotel[:nomer]%><% if hotel.key?('nomer_col_type') %> / <%=hotel['nomer_col_type']%><% end  %></td>
+          <td><%=hotel[:eda]%></td>
+          <td><%=hotel[:coast]%> <%=hotel[:currency]%></td>
+          <td>
+            <div class="tickets_out <%= hotel[:econom_out] %>" title="<%= places_title(hotel[:econom_out])  %>"></div>
+            <div class="tickets_home <%= hotel[:econom_home] %>" title="<%= places_title(hotel[:econom_home]) %>"></div>
+          </td>
+          <td>
+            <div class="tickets_out <%= hotel[:business_out] %>" title="<%= places_title(hotel[:business_out])  %>"></div>
+            <div class="tickets_home <%= hotel[:business_home] %>" title="<%= places_title(hotel[:business_home]) %>"></div>
+          </td>
           <td><a href="<%=hotel['bron_link']%>" target="_blank">[бронировать]</a></td>
         </tr>
 <% end  %>
